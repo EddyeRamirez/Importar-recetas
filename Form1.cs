@@ -19,17 +19,7 @@ namespace Importar_recetas
         }
 
         private void examinarSimpleButton_Click(object sender, EventArgs e)
-        {
-            XtraMessageBox.Show(MessageBoxIcon.Asterisk.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            XtraMessageBox.Show(MessageBoxIcon.Error.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            XtraMessageBox.Show(MessageBoxIcon.Exclamation.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            XtraMessageBox.Show(MessageBoxIcon.Hand.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-            XtraMessageBox.Show(MessageBoxIcon.Information.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            XtraMessageBox.Show(MessageBoxIcon.None.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.None);
-            XtraMessageBox.Show(MessageBoxIcon.Question.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Question);
-            XtraMessageBox.Show(MessageBoxIcon.Stop.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            XtraMessageBox.Show(MessageBoxIcon.Warning.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+        {            
             openFileDialog1.Filter = "Ficheros Excel |*.xls*";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
